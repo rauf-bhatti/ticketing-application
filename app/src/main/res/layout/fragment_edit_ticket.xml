@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".police.EditTicketFragment">
+
+    <TextView
+        android:id="@+id/lbl_mainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Edit Ticket"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lbl_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_mainLabel"
+        android:layout_marginTop="2sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Citizen ID"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editText_frag_userID"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lbl_ID"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/lbl_Offence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_frag_userID"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="Offence"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinner_frag_Offence"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lbl_Offence"
+        android:layout_centerHorizontal="true"
+        android:background="@color/smokewhite"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/lbl_Fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_frag_Offence"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="Fine To Be Issued"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editText_frag_Fine"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lbl_Fine"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_frag_Fine"
+        android:layout_centerHorizontal="true"
+        android:text="Update" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".police.PoliceViewTicketsActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/login_banner"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nhmp_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView_logo"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Previously Issued Tickets"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_viewTickets"
+        android:layout_width="380dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/imageView_logo"
+        android:layout_marginTop="35dp"
+        android:background="@color/smokewhite"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_issueTicket"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/recyclerView_viewTickets"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ISSUE TICKET"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+</RelativeLayout>
